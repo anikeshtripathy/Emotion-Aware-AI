@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Aware AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Emotion Aware AI</h1>
+
+    <!-- Form for uploading facial image -->
+    <div>
+        <h2>Upload Facial Image</h2>
+        <input type="file" id="faceFile" accept="image/*">
+        <button onclick="analyzeFace()">Analyze Face</button>
+    </div>
+
+    <!-- Form for entering textual input -->
+    <div>
+        <h2>Enter Text</h2>
+        <textarea id="textInput" rows="4" cols="50"></textarea>
+        <button onclick="analyzeText()">Analyze Text</button>
+    </div>
+
+    <!-- Form for uploading audio file -->
+    <div>
+        <h2>Upload Audio File</h2>
+        <input type="file" id="audioFile" accept=".wav">
+        <button onclick="analyzeAudio()">Analyze Audio</button>
+    </div>
+
+    <!-- Section to display results -->
+    <div id="results">
+        <h2>Results</h2>
+        <p id="faceResult">Facial Emotion: </p>
+        <p id="textResult">Textual Emotion: </p>
+        <p id="audioResult">Audio Emotion: </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
